@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab3_6 {
     //kiem tra ki tu nhap
-    static boolean kiemTraAlphabet(char kiTu){
+    public static boolean kiemTraAlphabet(char kiTu){
         if ((kiTu >= 65 && kiTu <= 90) || (kiTu >= 97 && kiTu <= 122))
             return true;
 
