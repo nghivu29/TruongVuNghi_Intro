@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Lab1_1and2 {
     //chuong trinh nhap xuat thong tin ung vien
-
     static class ungVienSo1{
         String hoTen;
         int namSinh;
