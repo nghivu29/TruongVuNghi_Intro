@@ -5,6 +5,5 @@ public class MainLab7_1 {
         MARK mark = new MARK();
         mark.NhapMonHoc();
         mark.XuatMonHoc();
-//        System.out.println(mark.TinhDTB());
     }
 }

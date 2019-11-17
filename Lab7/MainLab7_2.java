@@ -10,47 +10,11 @@ public class MainLab7_2 {
         PROCDUCT sp4 = new PROCDUCT();
         PROCDUCT sp5 = new PROCDUCT();
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("***sp1:");
-        System.out.println("Nhap ten san pham:");
-        sp1.tenSanPham = sc.nextLine();
-        System.out.println("Nhap don gia: ");
-        sp1.giaBan = sc.nextInt();
-        System.out.println("Nhap so luong");
-        sp1.soLuong = sc.nextInt();
-
-//        System.out.println("***sp2:");
-//        System.out.println("Nhap ten san pham:");
-//        sp2.tenSanPham = sc.nextLine();
-//        System.out.println("Nhap don gia: ");
-//        sp2.giaBan = sc.nextInt();
-//        System.out.println("Nhap so luong");
-//        sp2.soLuong = sc.nextInt();
-//
-//        System.out.println("***sp3:");
-//        System.out.println("Nhap ten san pham:");
-//        sp3.tenSanPham = sc.nextLine();
-//        System.out.println("Nhap don gia: ");
-//        sp3.giaBan = sc.nextInt();
-//        System.out.println("Nhap so luong");
-//        sp3.soLuong = sc.nextInt();
-//
-//        System.out.println("***sp4:");
-//        System.out.println("Nhap ten san pham:");
-//        sp4.tenSanPham = sc.nextLine();
-//        System.out.println("Nhap don gia: ");
-//        sp4.giaBan = sc.nextInt();
-//        System.out.println("Nhap so luong");
-//        sp4.soLuong = sc.nextInt();
-//
-//        System.out.println("***sp5:");
-//        System.out.println("Nhap ten san pham:");
-//        sp5.tenSanPham = sc.nextLine();
-//        System.out.println("Nhap don gia: ");
-//        sp5.giaBan = sc.nextInt();
-//        System.out.println("Nhap so luong");
-//        sp5.soLuong = sc.nextInt();
-
-        sp1.hienThi();
+        System.out.println("STT       |Ten san pham        |So luong            |Don gia<$>          |Tong tien<$>        ");
+        System.out.print("1"); sp1.hienThi();
+        System.out.print("2"); sp2.hienThi();
+        System.out.print("3"); sp3.hienThi();
+        System.out.print("4"); sp4.hienThi();
+        System.out.print("5"); sp5.hienThi();
     }
 }
