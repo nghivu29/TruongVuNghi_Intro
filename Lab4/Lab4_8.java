@@ -24,7 +24,8 @@ public class Lab4_8 {
             n = sc.nextInt();
         }while (n < 0);
 
-        System.out.println("Số nhị phân của nó là: "+ DecToBin(n));
-
+        System.out.println("Số nhị phân của nó là(ở dạng thập phân): "+ DecToBin(n));
+// phương thức toBinatyString của lớp Interger cho phép đổi một số thập phân về một chuỗi kí tự nhị phân
+        System.out.println("Số nhị phân của nó là(ở dạng chuỗi): " + Integer.toBinaryString(n));
     }
 }

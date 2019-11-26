@@ -46,6 +46,7 @@ public class Lab5_9 {
 //        System.out.println("CF\t\tC\t\tHDJ\t\tDU\t\tRDBMS\t\tJava\t\tDiemTB");
         nhapMang2chieu(diem);
         xuatMangDiem(diem);
+        diemTB(diemTB);
 
     }
 }

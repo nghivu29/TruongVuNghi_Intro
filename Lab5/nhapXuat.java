@@ -15,7 +15,7 @@ public class nhapXuat {
     }
 
     public static void xuatMang(int[] arr) {
-        System.out.println("Cac phan tu chan cua mang:");
+        System.out.println("Cac phan tu cua mang:");
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println("arr[" + i + "] = " + arr[i]);

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MainLab7_3 {
     public static void main(String[] args) {
-        //em lười viết thêm kiểm tra điểm có từ 0 đến 10 lắm mà đề cũng không yêu cầu
+        //em lười viết thêm kiểm tra điểm có thuộc từ 0 đến 10 không lắm mà đề cũng không yêu cầu
         MARK[] arr = new MARK[8];
         MARK2 mark = new MARK2();
 

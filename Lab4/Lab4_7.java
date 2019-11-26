@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Lab4_7 {
-    static boolean kiemTraSNT(int n){
+    public static boolean kiemTraSNT(int n){
         // chương trình kiểm tra xem n có phải là số nguyên tố không
         int check = 0;
 

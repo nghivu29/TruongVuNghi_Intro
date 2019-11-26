@@ -17,7 +17,7 @@ public class Lab8_4 {
         return string;
     }
 
-    static String standardize(String string){
+    protected static String standardize(String string){
         string = deleteSpiecalChar(string);
         string = string.toLowerCase();
 

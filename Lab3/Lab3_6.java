@@ -11,7 +11,7 @@ public class Lab3_6 {
         return false;
     }
 
-    static boolean kiemTraTrongAm(char kiTu){
+    public static boolean kiemTraNguyenAm(char kiTu){
         if (kiTu == 65 || kiTu == 69 || kiTu == 73 || kiTu == 79 || kiTu == 85 || kiTu == 97 || kiTu == 101 || kiTu == 105 || kiTu == 111 || kiTu ==117 )
             return true;
         return false;
@@ -26,7 +26,7 @@ public class Lab3_6 {
 
         if (kiemTraAlphabet(kiTu) == true)
 
-            if (kiemTraTrongAm(kiTu) == true)
+            if (kiemTraNguyenAm(kiTu) == true)
                 System.out.println("Ki tu vua nhap la nguyen am");
             else System.out.println("Ki tu vau nhap la phu am");
 

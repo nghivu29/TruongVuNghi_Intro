@@ -16,5 +16,7 @@ public class MainLab7_2 {
         System.out.print("3"); sp3.hienThi();
         System.out.print("4"); sp4.hienThi();
         System.out.print("5"); sp5.hienThi();
+
+        System.out.println("");
     }
 }
