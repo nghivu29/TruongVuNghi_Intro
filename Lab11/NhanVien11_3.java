@@ -6,18 +6,17 @@ import java.util.List;
 import java.util.Scanner;
 
 public class NhanVien11_3 implements Serializable {
-    private int no = count;
+    private String maSo;
     private String hoTen;
     private int tuoi;
     private int luong;
     static List<NhanVien11_3> list = new ArrayList<>();
-    static int count = 1;
 
     NhanVien11_3(){
         Scanner sc = new Scanner(System.in);
 
-        count++;
-
+        System.out.print("Ma so: ");
+        maSo = sc.nextLine();
         System.out.print("Ho ten: ");
         hoTen = sc.nextLine();
         System.out.print("Tuoi: ");
@@ -26,6 +25,14 @@ public class NhanVien11_3 implements Serializable {
         luong = sc.nextInt();
 
         list.add(this);
+    }
+
+    void hienThi(){
+        System.out.println("===NV"+ maSo);
+        System.out.println("Ho ten: "+ hoTen);
+        System.out.println("Tuoi: "+ tuoi);
+        System.out.println("Luong: "+ luong);
+
     }
 
     public String getHoTen() {
@@ -52,7 +59,11 @@ public class NhanVien11_3 implements Serializable {
         this.luong = luong;
     }
 
-    public int getNo(){
-        return no;
+    public String getMaSo() {
+        return maSo;
+    }
+
+    public void setMaSo(String maSo) {
+        this.maSo = maSo;
     }
 }

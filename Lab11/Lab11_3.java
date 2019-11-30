@@ -10,7 +10,7 @@ public class Lab11_3 {
         ObjectOutputStream objOut = null;
 
         try {
-            fileOut = new FileOutputStream("C:\\Users\\ACER\\OneDrive\\Desktop\\black cat\\introduce programming\\src\\Lab11\\nhanvien.bin");
+            fileOut = new FileOutputStream("C:\\Users\\ACER\\OneDrive\\Desktop\\black cat\\introduce programming\\src\\Lab11\\nhanvien.dat");
             objOut = new ObjectOutputStream(fileOut);
 
             objOut.writeObject(list);
@@ -20,7 +20,7 @@ public class Lab11_3 {
 
         }finally {
             if (fileOut != null) fileOut.close();
-            if (objOut != null) objOut.close();;
+            if (objOut != null) objOut.close();
         }
     }
 
@@ -30,7 +30,7 @@ public class Lab11_3 {
         List<NhanVien11_3> list = null;
 
         try {
-            fileIn = new FileInputStream("C:\\Users\\ACER\\OneDrive\\Desktop\\black cat\\introduce programming\\src\\Lab11\\nhanvien.bin");
+            fileIn = new FileInputStream("C:\\Users\\ACER\\OneDrive\\Desktop\\black cat\\introduce programming\\src\\Lab11\\nhanvien.dat");
             objIn = new ObjectInputStream(fileIn);
 
             list =(List<NhanVien11_3>) objIn.readObject();
@@ -44,7 +44,7 @@ public class Lab11_3 {
         }
 
         for (NhanVien11_3 i: list){
-            System.out.println("\n***STT: "+ i.getNo());
+            System.out.println("\n===NV"+ i.getMaSo());
             System.out.println("Ho ten: "+ i.getHoTen());
             System.out.println("Tuoi: "+ i.getTuoi());
             System.out.println("Luong: "+ i.getLuong());
@@ -57,7 +57,7 @@ public class Lab11_3 {
         NhanVien11_3 nhanVienMoi;
 
         for (int i = 1; i <= n; i++) {
-            System.out.println("\n===NV "+ i);
+            System.out.println("\n***STT "+ i);
             nhanVienMoi = new NhanVien11_3();
         }
 
