@@ -1,0 +1,22 @@
+a) Giải phương trình bậc II: ax2 + bx + c = 0.
+    - Nhập vào 3 số a, b, c nếu a = 0 thì người dùng nhập lại
+    - Tính delta theo công thức
+    - Nếu delta > 0 in ra 2 nghiệm theo công thức
+    - Nếu delta = 0 chỉ in ra một nghiệm
+    - Nếu delta < 0 in ra thông báo phương trình vô nghiệm
+
+b) Nhập vào 1 số n, kiểm tra n phải > 0, nếu sai điều kiện thì bắt nhập lại, nếu
+   đúng thì xuất ra các số chẵn <= n.
+   - Cho người dùng nhập vào n, nếu n <= 0 thì bắt người đùng nhập lại
+   - Dùng vòng lặp cho biến i = 1 chạy dần tới n
+   - Nếu i chia dư cho 2 bằng 0 thì xuất i ra màng hình
+
+c) Nhập vào 1 số n, kiểm tra n phải > 1, nếu sai điều kiện thì bắt nhập lại, nếu
+   đúng thì xuất ra các số nguyên tố <= n.
+   - Cho người dùng nhập vào n, nếu n <= 1 thì bắt người đùng nhập lại
+   - Dùng vòng lặp cho i = 0 chạy dần tới n
+   - Khai báo một biến kiểu boolean = true
+   - Dùng vòng lặp con cho j = 1 chạy dần tới nhỏ hơn i
+   - Mỗi lần điều kiện i chia dư cho 2 thỏa bằng 0 biến kiểu boolean = fasle
+   - Nếu sau vòng lặp của j biến boolean vẫn là true thì in 'i' ra màng hình
+
