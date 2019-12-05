@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-05 09:56:15 AM"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMS0wNDsxMDo0NzozMyBBTTsyNzcz"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMS0wNDsxMjozODowMyBQTTszOzI4OTc="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQzJUS0NLS0I7MjAxOS0xMi0wNTswOTo1NjoxNSBBTTsxOzI3MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <declare name="max1, max2, min1, min2, max, min" type="Real" array="False" size=""/>
+            <if expression="a&lt;b">
+                <then>
+                    <assign variable="max1" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="max1" expression="a"/>
+                </else>
+            </if>
+            <if expression="c&lt;d">
+                <then>
+                    <assign variable="max2" expression="d"/>
+                </then>
+                <else>
+                    <assign variable="max2" expression="c"/>
+                </else>
+            </if>
+            <if expression="max1&lt;max2">
+                <then>
+                    <assign variable="max" expression="max2"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="max1"/>
+                </else>
+            </if>
+            <output expression="max" newline="True"/>
+            <if expression="a&gt;b">
+                <then>
+                    <assign variable="min1" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="min1" expression="a"/>
+                </else>
+            </if>
+            <if expression="c&gt;d">
+                <then>
+                    <assign variable="min2" expression="d"/>
+                </then>
+                <else>
+                    <assign variable="min1" expression="c"/>
+                </else>
+            </if>
+            <if expression="min1&gt;min2">
+                <then>
+                    <assign variable="min" expression="min2"/>
+                </then>
+                <else>
+                    <assign variable="min" expression="min1"/>
+                </else>
+            </if>
+            <output expression="min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

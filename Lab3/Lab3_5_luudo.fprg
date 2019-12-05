@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-02 04:18:15 PM"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMS0wNTswODozODowMyBQTTsyNzkz"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVZCQ0tFS0Y7MjAxOS0xMi0wMjswNDoxODoxNSBQTTsyOzI4OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="km, tien" type="Integer" array="False" size=""/>
+            <input variable="km"/>
+            <if expression="km&lt;=1">
+                <then>
+                    <assign variable="tien" expression="15000"/>
+                    <output expression="tien" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="km&lt;=5&amp;&amp;km&gt;1">
+                <then>
+                    <assign variable="tien" expression="15000+(km-1)*13500"/>
+                    <output expression="tien" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="tien" expression="15000+4*13500+(km-5)*11000"/>
+            <if expression="km&gt;120">
+                <then>
+                    <assign variable="tien" expression="tien*(1-0.1)"/>
+                    <output expression="tien" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
